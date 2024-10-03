@@ -56,7 +56,6 @@
 			<version>2.9.2</version>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -67,6 +66,7 @@
 	<build>
 		<finalName>contact-backend-app</finalName>
 		<plugins>
+			<!-- Spring Boot Maven Plugin -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -79,7 +79,18 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
+			<!-- Maven Compiler Plugin for Java 21 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version> <!-- Latest version -->
+				<configuration>
+					<source>21</source> <!-- Match your JDK version -->
+					<target>21</target>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
-
 </project>
+
