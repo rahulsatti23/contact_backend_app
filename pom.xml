@@ -15,7 +15,7 @@
 	<name>ashokit-contact-app</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -86,8 +86,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.11.0</version> <!-- Latest version -->
 				<configuration>
-					<source>21</source> <!-- Match your JDK version -->
-					<target>21</target>
+					<source>17</source> <!-- Match your JDK version -->
+					<target>17</target>
 				</configuration>
 			</plugin>
 		</plugins>
